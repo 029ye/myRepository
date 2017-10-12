@@ -7,3 +7,7 @@ server:
 spring:
   application:
     name: service-feign
+#feign 断路器开关默认是关闭的，要使用则需要开启
+feign:
+  hystrix:
+    enabled: true
